@@ -74,6 +74,8 @@ const btnCentral = document.getElementById('btnCentral');
 const btnEast = document.getElementById('btnEast');
 const btnWest = document.getElementById('btnWest');
 const btnSouth = document.getElementById('btnSouth');
+const btnAll = document.getElementById('btnAll');
+
 
 const central = document.querySelectorAll('.central');
 const north = document.querySelectorAll('.north');
