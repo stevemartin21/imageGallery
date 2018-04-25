@@ -53,14 +53,137 @@ function listSearch() {
 
 var slider = document.getElementById("demoRange");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
+//output.innerHTML = slider.value; // Display the default slider value
 
 var thumb = document.querySelectorAll('.thumb');
-console.log(thumb);
+//console.log(thumb);
 
-thumb.style.display= 'none';
+//thumb.style.display= 'none';
 
 // Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
+/*slider.oninput = function() {
     output.innerHTML = this.value;
 }
+
+*/
+
+//   Formula for showing
+
+const btnNorth = document.getElementById('btnNorth');
+const btnCentral = document.getElementById('btnCentral');
+const btnEast = document.getElementById('btnEast');
+const btnWest = document.getElementById('btnWest');
+const btnSouth = document.getElementById('btnSouth');
+
+const central = document.querySelectorAll('.central');
+const north = document.querySelectorAll('.north');
+const south = document.querySelectorAll('.south');
+const east = document.querySelectorAll('.east');
+const west = document.querySelectorAll('.west');
+
+console.log(central);
+
+
+//Add Event Listeners 
+
+btnNorth.addEventListener('click', function(){
+
+    for (i=0; i<central.length; i++){
+        central[i].style.display ='none';
+    }
+     for (i=0; i<east.length; i++){
+        east[i].style.display ='none';
+    }
+
+    for (i=0; i<west.length; i++){
+        west[i].style.display ='none';
+    }
+    for (i=0; i<south.length; i++){
+        south[i].style.display ='none';
+    }
+     for (i=0; i<north.length; i++){
+        north[i].style.display ='block';
+    }
+
+});
+
+btnCentral.addEventListener('click', function(){
+
+    for (i=0; i<north.length; i++){
+        north[i].style.display ='none';
+    }
+     for (i=0; i<east.length; i++){
+        east[i].style.display ='none';
+    }
+
+    for (i=0; i<west.length; i++){
+        west[i].style.display ='none';
+    }
+    for (i=0; i<south.length; i++){
+        south[i].style.display ='none';
+    }
+     for (i=0; i<central.length; i++){
+        central[i].style.display ='block';
+    }
+});
+
+btnEast.addEventListener('click', function(){
+
+    for (i=0; i<north.length; i++){
+        north[i].style.display ='none';
+    }
+     for (i=0; i<east.length; i++){
+        east[i].style.display ='block';
+    }
+
+    for (i=0; i<west.length; i++){
+        west[i].style.display ='none';
+    }
+    for (i=0; i<south.length; i++){
+        south[i].style.display ='none';
+    }
+     for (i=0; i<central.length; i++){
+        central[i].style.display ='none';
+    }
+});
+
+
+btnWest.addEventListener('click', function(){
+
+    for (i=0; i<north.length; i++){
+        north[i].style.display ='none';
+    }
+     for (i=0; i<east.length; i++){
+        east[i].style.display ='none';
+    }
+
+    for (i=0; i<west.length; i++){
+        west[i].style.display ='none';
+    }
+    for (i=0; i<south.length; i++){
+        south[i].style.display ='none';
+    }
+     for (i=0; i<central.length; i++){
+        central[i].style.display ='block';
+    }
+});
+
+btnSouth.addEventListener('click', function(){
+
+    for (i=0; i<north.length; i++){
+        north[i].style.display ='none';
+    }
+     for (i=0; i<east.length; i++){
+        east[i].style.display ='none';
+    }
+
+    for (i=0; i<west.length; i++){
+        west[i].style.display ='none';
+    }
+    for (i=0; i<south.length; i++){
+        south[i].style.display ='block';
+    }
+     for (i=0; i<central.length; i++){
+        central[i].style.display ='none';
+    }
+});

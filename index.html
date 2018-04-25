@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Gallery</title>
+    <title>Lightbox Gallery with Javascript Sorter</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -46,19 +46,19 @@
 <div class="container">
 
     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn-primary">North</button>
+<button type="button" class="btn btn-primary" id="btnNorth">North</button>
 
 <!-- Contextual button for informational alert messages -->
-<button type="button" class="btn btn-info">Central</button>
+<button type="button" class="btn btn-info" id="btnCentral">Central</button>
 
 <!-- Default button -->
-<button type="button" class="btn btn-default">South</button>
+<button type="button" class="btn btn-default" id="btnSouth">South</button>
 
 <!-- Secondary button -->
-<button type="button" class="btn btn-secondary">East</button>
+<button type="button" class="btn btn-secondary" id="btnEast">East</button>
 
 <!-- Indicates a successful or positive action -->
-<button type="button" class="btn btn-success">West</button>
+<button type="button" class="btn btn-success" id="btnWest">West</button>
 
 
 
@@ -70,73 +70,73 @@
 
                 <div class="mdb-lightbox">
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 east">
                         <a href="images/hayden.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/hayden.jpg" alt="placeholder" class="img-fluid">
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 south">
                         <a href="images/grafton.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/grafton.jpg" alt="placeholder" class="img-fluid" />
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 south">
                         <a href="images/pine.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/pine.jpg" alt="placeholder" class="img-fluid" />
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 central">
                         <a href="images/payson.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/payson.jpg" alt="placeholder" class="img-fluid" />
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 east">
                         <a href="images/myton.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/myton.jpg" alt="placeholder" class="img-fluid" />
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 east">
                         <a href="images/echo.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/echo.jpg" alt="placeholder" class="img-fluid" />
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 east">
                         <a href="images/emery.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/emery.jpg" alt="placeholder" class="img-fluid" />
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 south">
                         <a href="images/moab.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/moab.jpg" alt="placeholder" class="img-fluid" />
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 central">
                         <a href="images/mantiTab.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/mantiTab.jpg" alt="placeholder" class="img-fluid" />
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 north">
                         <a href="images/brighamTab.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/brighamTab.jpg" alt="placeholder" class="img-fluid" />
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 north">
                         <a href="images/fortDoug.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/fortDoug.jpg" alt="placeholder" class="img-fluid" />
                         </a>
                     </figure>
 
-                    <figure class="col-md-4">
+                    <figure class="col-md-4 south">
                         <a href="images/grafton2.jpg" data-size="1600x1067" data-lightbox="roadtrip">
                             <img src="thumbnail/grafton2.jpg" alt="placeholder" class="img-fluid" />
                         </a>
