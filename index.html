@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gallery</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <link href="css/lightbox.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        @media (max-width: 740px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 700px; 
+            } 
+        }
+    </style>
+</head>
+
+<div class="container">
+
+        <div class="jumbotron">
+            <h1 class="h1-responsive">Image Gallery</h1>
+            <p class="lead">Sort Pictures & Lightbox Effects</p>
+            <hr class="my-2">
+            <p>If you don't see your question here please send us a message
+            </p>
+            <a class="btn btn-primary btn-lg" href="#faq" role="button">Contact Us</a>
+              
+        </div>
+
+</div>
+
+
+<div class="container">
+
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">North</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Central</button>
+
+<!-- Default button -->
+<button type="button" class="btn btn-default">South</button>
+
+<!-- Secondary button -->
+<button type="button" class="btn btn-secondary">East</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">West</button>
+
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+
+                
+
+                <div class="mdb-lightbox">
+
+                    <figure class="col-md-4">
+                        <a href="images/hayden.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/hayden.jpg" alt="placeholder" class="img-fluid">
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/grafton.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/grafton.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/pine.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/pine.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/payson.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/payson.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/myton.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/myton.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/echo.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/echo.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/emery.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/emery.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/moab.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/moab.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/mantiTab.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/mantiTab.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/brighamTab.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/brighamTab.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/fortDoug.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/fortDoug.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="images/grafton2.jpg" data-size="1600x1067" data-lightbox="roadtrip">
+                            <img src="thumbnail/grafton2.jpg" alt="placeholder" class="img-fluid" />
+                        </a>
+                    </figure>
+
+                </div>
+
+            </div>
+        </div>
+</div>
+
+
+
+
+
+  <div class="container" id="faq">
+        <form>
+            <p class="h4 text-center mb-4">Contact Us</p>
+
+            <!-- Material input text -->
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="materialFormContactNameEx" class="form-control">
+                <label for="materialFormContactNameEx">Your name</label>
+            </div>
+
+            <!-- Material input email -->
+            <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="materialFormContactEmailEx" class="form-control">
+                <label for="materialFormContactEmailEx">Your email</label>
+            </div>
+            
+            <!-- Material input subject -->
+            <div class="md-form">
+                <i class="fa fa-tag prefix grey-text"></i>
+                <input type="text" id="materialFormContactSubjectEx" class="form-control">
+                <label for="materialFormContactSubjectEx">Subject</label>
+            </div>
+            
+            <!-- Material textarea message -->
+            <div class="md-form">
+                <i class="fa fa-pencil prefix grey-text"></i>
+                <textarea type="text" id="materialFormContactMessageEx" class="form-control md-textarea" rows="3"></textarea>
+                <label for="materialFormContactMessageEx">Your message</label>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-secondary" type="submit">Send<i class="fa fa-paper-plane-o ml-2"></i></button>
+            </div>
+        </form>
+    </div>
+<!-- Material form contact -->
+                      
+
+ <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!--  Bootstrap tooltips  -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!--  Bootstrap core JavaScript  -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--  MDB core JavaScript  -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="faq.js"></script>
+
+    <script src="js/lightbox.js"></script>
+
+    <script>
+        //Animation init
+        new WOW().init();
+        
+        //Modal
+        $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').focus()
+        })
+        
+        // Material Select Initialization
+        $(document).ready(function() {
+            $('.mdb-select').material_select();
+        });
+        
+        
+    </script>
+    
+</body>
+
+</html>
