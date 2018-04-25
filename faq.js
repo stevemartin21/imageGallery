@@ -187,3 +187,23 @@ btnSouth.addEventListener('click', function(){
         central[i].style.display ='none';
     }
 });
+
+btnAll.addEventListener('click', function(){
+
+    for (i=0; i<north.length; i++){
+        north[i].style.display ='block';
+    }
+     for (i=0; i<east.length; i++){
+        east[i].style.display ='block';
+    }
+
+    for (i=0; i<west.length; i++){
+        west[i].style.display ='block';
+    }
+    for (i=0; i<south.length; i++){
+        south[i].style.display ='block';
+    }
+     for (i=0; i<central.length; i++){
+        central[i].style.display ='block';
+    }
+});
